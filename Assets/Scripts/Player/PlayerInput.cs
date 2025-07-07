@@ -19,7 +19,7 @@ public class PlayerInput : MonoBehaviour
     void Update()
     {
         // Pressed C for quick restart
-        if (Input.GetKeyDown(KeyCode.C))
+        if (Input.GetKeyDown(KeyCode.R))
         {
             if (player.isFrozen && !player.isDead)
             {
@@ -100,7 +100,7 @@ public class PlayerInput : MonoBehaviour
         }
 
         // Shooting key
-        if (Input.GetKeyDown(KeyCode.X))
+        if (Input.GetKeyDown(KeyCode.Z))
         {
             // Shooting when colliding on save will result in saving a game
             if (player.collidingSave != null)
@@ -112,13 +112,13 @@ public class PlayerInput : MonoBehaviour
         }
 
         // Jumping key down
-        if (Input.GetKeyDown(KeyCode.Z))
+        if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             player.OnJumpInputDown();
         }
 
         // Jumping key up
-        if (Input.GetKeyUp(KeyCode.Z))
+        if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             player.OnJumpInputUp();
         }

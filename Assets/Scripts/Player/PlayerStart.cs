@@ -21,7 +21,7 @@ public class PlayerStart : MonoBehaviour
         if (data.valid && data.sceneIndex == NewSceneManager.SceneIndex)
         {
             pos.x = data.playerX;
-            pos.y = data.playerY;
+            pos.y = data.playerY + 1; // Restart bug fix
         }
         else
         {
